@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ECharts from './componets/ECharts';
+import EChartsTest from './componets/TestChart';
+import ReactEcharts from 'echarts-for-react';
+import EChartsTest2 from './componets/TestChart2';
+import EChartsTest3 from './componets/TestChart3';
+import WeatherChart from './componets/WeatherChart';
+import HeartMap from './componets/HeartMap';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <WeatherChart />
+      <HeartMap />
     </div>
   );
 }
